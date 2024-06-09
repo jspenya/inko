@@ -1,5 +1,4 @@
 require_relative "page/elements"
-require "debug"
 
 class Tiga
   def initialize(action)
@@ -50,7 +49,7 @@ class Tiga
       puts "Locked In! 🤞"
     else
       @clock_out_btn.click
-      puts "Enjoy!👋"
+      puts "Bye! Enjoy👋"
     end
   end
 

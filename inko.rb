@@ -1,7 +1,6 @@
 require "selenium-webdriver"
 require "dotenv/load"
-require_relative "in_or_out"
-require_relative "tiga"
+Dir[File.join(__dir__, 'lib', '*.rb')].each { |file| require file }
 
 class Inko
   def run
